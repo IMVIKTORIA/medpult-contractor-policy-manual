@@ -1,1 +1,1 @@
-# medpult-contractor-policy-manual
+# medpult-contractor-policy

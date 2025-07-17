@@ -1,0 +1,26 @@
+.panel-input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding-bottom: 16px;
+  height: 100%;
+  overflow-y: auto;
+
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+
+  &__label {
+    color: #6b6c6f;
+    font-size: 14px;
+    font-weight: 400;
+    white-space: nowrap;
+    width: 200px;
+  }
+  &__field {
+    flex: 1;
+    min-width: 221px;
+  }
+}
