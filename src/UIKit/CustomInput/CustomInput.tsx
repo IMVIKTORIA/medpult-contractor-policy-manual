@@ -47,10 +47,10 @@ function CustomInput(props: CustomInputProps) {
 
   return (
     <div
-      className={`custom-input__wrapper
-    ${isOpen ? "custom-input__wrapper_open" : ""}
-    ${isInvalid ? "custom-input__wrapper_invalid" : ""}
-    ${disabled ? "custom-input__wrapper_disabled" : ""}
+      className={`custom-input__wraper
+    ${isOpen ? "custom-input__wraper_open" : ""}
+    ${isInvalid ? "custom-input__wraper_invalid" : ""}
+    ${disabled ? "custom-input__wraper_disabled" : ""}
     ${customClassname ? customClassname : ""}
   `}
       ref={wrapperRef}
