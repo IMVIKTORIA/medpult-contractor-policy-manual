@@ -21,12 +21,12 @@ function CustomInputDate(props: CustomInputDateProps) {
   const buttonSvg = icons.Calendar;
 
   const getMinDate = () => {
-    const today = new Date();
-    today.setDate(today.getDate() + 1);
-    const yyyy = today.getFullYear();
-    const mm = String(today.getMonth() + 1).padStart(2, "0");
-    const dd = String(today.getDate()).padStart(2, "0");
-    return `${yyyy}-${mm}-${dd}`;
+    if (props.startDate) {
+      const [dd, mm, yyyy] = props.startDate.split(".");
+      return `${yyyy}-${mm}-${dd}`;
+    }
+
+    return undefined;
   };
 
   const minDate = getMinDate();
@@ -76,7 +76,7 @@ function CustomInputDate(props: CustomInputDateProps) {
         onChange={onChangePickerValue}
         className="custom-input-date__picker"
         ref={pickerRef}
-        min={minDate}
+        {...(minDate ? { min: minDate } : {})}
       />
       <CustomInput
         {...props}

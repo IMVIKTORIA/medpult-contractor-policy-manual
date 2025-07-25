@@ -54,6 +54,7 @@ export default function PanelInputDate({
               setValue={setEndDate ?? (() => {})}
               style={style}
               disabled={disabled}
+              startDate={startDate}
             />
           </div>
         )}

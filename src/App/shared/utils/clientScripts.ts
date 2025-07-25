@@ -13,7 +13,7 @@ async function getPolicyData(): Promise<PolicyManualListData> {
   await randomDelay();
   return {
     policy: "1234577RT",
-    termPolicy: "1",
+    termPolicy: "",
     regionInc: "Москва",
     regionExc: "",
     insurer: "Иванов Иван Ивановичччччччччччччччччччччч",
